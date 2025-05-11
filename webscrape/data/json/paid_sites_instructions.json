@@ -1,0 +1,20 @@
+{
+  "SCC Online": {
+    "url": "https://www.scconline.com",
+    "access_method": "Institutional login or subscription required",
+    "api_availability": "May offer API access for institutional subscribers",
+    "alternative": "Contact their support for bulk data access options"
+  },
+  "Manupatra": {
+    "url": "https://www.manupatrafast.com",
+    "access_method": "Paid subscription required",
+    "api_availability": "May have API for enterprise clients",
+    "alternative": "Consider reaching out for research partnerships"
+  },
+  "AIR Online": {
+    "url": "https://www.aironline.in",
+    "access_method": "Subscription-based access",
+    "api_availability": "Limited information available",
+    "alternative": "Check if they offer academic or bulk access programs"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "source": "Legislative Department",
+    "type": "Constitution",
+    "title": "Constitution of India",
+    "url": "https://legislative.gov.in/sites/default/files/coi-4March2016.pdf",
+    "content": "PDF content needs to be extracted separately",
+    "requires_pdf_processing": true
+  }
+]

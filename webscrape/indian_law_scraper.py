@@ -629,16 +629,16 @@ def main():
         ik_scraper.save_data()
         
         # Scrape from India Code
-        ic_scraper = IndiaCodeScraper()
-        ic_scraper.scrape_constitution()
-        ic_scraper.scrape_acts(limit=5)  # Limiting to 5 for demonstration
-        ic_scraper.save_data()
+        # ic_scraper = IndiaCodeScraper()
+        # ic_scraper.scrape_constitution()
+        # ic_scraper.scrape_acts(limit=5)  # Limiting to 5 for demonstration
+        # ic_scraper.save_data()
         
-        # Scrape from Legislative Department
-        ld_scraper = LegislativeDeptScraper()
-        ld_scraper.scrape_constitution()
-        ld_scraper.scrape_acts(limit=3)  # Limiting to 3 for demonstration
-        ld_scraper.save_data()
+        # # Scrape from Legislative Department
+        # ld_scraper = LegislativeDeptScraper()
+        # ld_scraper.scrape_constitution()
+        # ld_scraper.scrape_acts(limit=3)  # Limiting to 3 for demonstration
+        # ld_scraper.save_data()
         
         # Handle paid sites
         paid_handler = PaidSiteHandler()

@@ -1,0 +1,138 @@
+2025-05-11 10:49:16,955 - run_all - INFO - Starting full scraping run with document limit: 10
+2025-05-11 10:49:16,955 - run_all - INFO - Step 1: Scraping from Indian Kanoon
+2025-05-11 10:49:16,955 - indian_law_scraper - INFO - Scraping Indian Constitution from Indian Kanoon
+2025-05-11 10:49:17,737 - indian_law_scraper - INFO - Scraping up to 10 bare acts from Indian Kanoon
+2025-05-11 10:49:18,558 - indian_law_scraper - WARNING - No laws to save from Indian Kanoon
+2025-05-11 10:49:18,559 - run_all - INFO - Step 2: Scraping from India Code
+2025-05-11 10:49:18,559 - indian_law_scraper - INFO - Scraping Constitution from India Code at https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:49:18,662 - indian_law_scraper - ERROR - Request error on attempt 1/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:49:18,673 - indian_law_scraper - INFO - Retrying in 1.61 seconds...
+2025-05-11 10:49:20,399 - indian_law_scraper - ERROR - Request error on attempt 2/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:49:20,400 - indian_law_scraper - INFO - Retrying in 2.81 seconds...
+2025-05-11 10:49:23,380 - indian_law_scraper - ERROR - Request error on attempt 3/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:49:23,380 - indian_law_scraper - ERROR - Failed to retrieve https://www.indiacode.nic.in/coiweb/welcome.html after 3 attempts
+2025-05-11 10:49:23,381 - indian_law_scraper - INFO - Scraping up to 10 central acts from India Code
+2025-05-11 10:49:23,456 - indian_law_scraper - ERROR - Request error on attempt 1/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:49:23,456 - indian_law_scraper - INFO - Retrying in 1.99 seconds...
+2025-05-11 10:49:25,523 - indian_law_scraper - ERROR - Request error on attempt 2/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:49:25,523 - indian_law_scraper - INFO - Retrying in 2.03 seconds...
+2025-05-11 10:49:27,624 - indian_law_scraper - ERROR - Request error on attempt 3/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:49:27,625 - indian_law_scraper - ERROR - Failed to retrieve https://www.indiacode.nic.in/coiweb/welcome.html after 3 attempts
+2025-05-11 10:49:27,625 - indian_law_scraper - WARNING - No laws to save from India Code
+2025-05-11 10:49:27,625 - run_all - INFO - Step 3: Scraping from Legislative Department
+2025-05-11 10:49:27,626 - indian_law_scraper - INFO - Scraping Constitution from Legislative Department
+2025-05-11 10:49:27,626 - indian_law_scraper - INFO - Constitution PDF available at https://legislative.gov.in/sites/default/files/coi-4March2016.pdf - needs PDF processing
+2025-05-11 10:49:27,626 - indian_law_scraper - INFO - Scraping up to 10 acts from Legislative Department
+2025-05-11 10:49:28,009 - indian_law_scraper - INFO - Saved 1 law references from Legislative Department
+2025-05-11 10:49:28,009 - run_all - INFO - Step 4: Generating instructions for paid sites
+2025-05-11 10:49:28,010 - indian_law_scraper - INFO - Generating instructions for paid sites
+2025-05-11 10:49:28,011 - indian_law_scraper - INFO - Generated instructions for paid sites
+2025-05-11 10:49:28,011 - run_all - INFO - Step 5: Processing PDF files
+2025-05-11 10:49:28,011 - pdf_processor - INFO - Processing PDFs using PyPDF2
+2025-05-11 10:49:28,025 - pdf_processor - INFO - Processing PDF: Constitution of India from https://legislative.gov.in/sites/default/files/coi-4March2016.pdf
+2025-05-11 10:49:28,561 - pdf_processor - ERROR - Error processing PDF Constitution of India: 404 Client Error: Not Found for url: https://legislative.gov.in/sites/default/files/coi-4March2016.pdf
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Legalaid\LegalAid\webscrape\pdf_processing_extension.py", line 77, in process_single_pdf
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\Desktop\Legalaid\LegalAid\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://legislative.gov.in/sites/default/files/coi-4March2016.pdf
+2025-05-11 10:49:28,564 - pdf_processor - WARNING - No processed PDFs to save
+2025-05-11 10:49:28,564 - pdf_processor - INFO - Processed 0 PDF files
+2025-05-11 10:49:28,564 - run_all - INFO - Step 6: Generating summary report
+2025-05-11 10:49:28,564 - indian_law_scraper - INFO - Generating summary report
+2025-05-11 10:49:28,576 - indian_law_scraper - INFO - Summary report generated
+2025-05-11 10:49:28,576 - run_all - INFO - All tasks completed successfully in 11.62 seconds
+2025-05-11 10:54:28,769 - run_all - INFO - Starting full scraping run with document limit: 10
+2025-05-11 10:54:28,770 - run_all - INFO - Step 1: Scraping from Indian Kanoon
+2025-05-11 10:54:28,770 - indian_law_scraper - INFO - Scraping Indian Constitution from Indian Kanoon
+2025-05-11 10:54:29,516 - indian_law_scraper - INFO - Scraping up to 10 bare acts from Indian Kanoon
+2025-05-11 10:54:30,246 - indian_law_scraper - WARNING - No laws to save from Indian Kanoon
+2025-05-11 10:54:30,246 - run_all - INFO - Step 2: Scraping from India Code
+2025-05-11 10:54:30,246 - indian_law_scraper - INFO - Scraping Constitution from India Code at https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:54:30,345 - indian_law_scraper - ERROR - Request error on attempt 1/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:54:30,345 - indian_law_scraper - INFO - Retrying in 1.08 seconds...
+2025-05-11 10:54:31,538 - indian_law_scraper - ERROR - Request error on attempt 2/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:54:31,539 - indian_law_scraper - INFO - Retrying in 2.20 seconds...
+2025-05-11 10:54:33,896 - indian_law_scraper - ERROR - Request error on attempt 3/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:54:33,897 - indian_law_scraper - ERROR - Failed to retrieve https://www.indiacode.nic.in/coiweb/welcome.html after 3 attempts
+2025-05-11 10:54:33,898 - indian_law_scraper - INFO - Scraping up to 10 central acts from India Code
+2025-05-11 10:54:34,033 - indian_law_scraper - ERROR - Request error on attempt 1/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:54:34,034 - indian_law_scraper - INFO - Retrying in 1.95 seconds...
+2025-05-11 10:54:36,109 - indian_law_scraper - ERROR - Request error on attempt 2/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:54:36,109 - indian_law_scraper - INFO - Retrying in 2.57 seconds...
+2025-05-11 10:54:38,759 - indian_law_scraper - ERROR - Request error on attempt 3/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 10:54:38,759 - indian_law_scraper - ERROR - Failed to retrieve https://www.indiacode.nic.in/coiweb/welcome.html after 3 attempts
+2025-05-11 10:54:38,760 - indian_law_scraper - WARNING - No laws to save from India Code
+2025-05-11 10:54:38,760 - run_all - INFO - Step 3: Scraping from Legislative Department
+2025-05-11 10:54:38,760 - indian_law_scraper - INFO - Scraping Constitution from Legislative Department
+2025-05-11 10:54:38,760 - indian_law_scraper - INFO - Constitution PDF available at https://legislative.gov.in/sites/default/files/coi-4March2016.pdf - needs PDF processing
+2025-05-11 10:54:38,760 - indian_law_scraper - INFO - Scraping up to 10 acts from Legislative Department
+2025-05-11 10:54:39,258 - indian_law_scraper - INFO - Saved 1 law references from Legislative Department
+2025-05-11 10:54:39,258 - run_all - INFO - Step 4: Generating instructions for paid sites
+2025-05-11 10:54:39,258 - indian_law_scraper - INFO - Generating instructions for paid sites
+2025-05-11 10:54:39,260 - indian_law_scraper - INFO - Generated instructions for paid sites
+2025-05-11 10:54:39,260 - run_all - INFO - Step 5: Processing PDF files
+2025-05-11 10:54:39,260 - pdf_processor - INFO - Processing PDFs using PyPDF2
+2025-05-11 10:54:39,270 - pdf_processor - INFO - Processing PDF: Constitution of India from https://legislative.gov.in/sites/default/files/coi-4March2016.pdf
+2025-05-11 10:54:39,831 - pdf_processor - ERROR - Error processing PDF Constitution of India: 404 Client Error: Not Found for url: https://legislative.gov.in/sites/default/files/coi-4March2016.pdf
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Legalaid\LegalAid\webscrape\pdf_processing_extension.py", line 77, in process_single_pdf
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\Desktop\Legalaid\LegalAid\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://legislative.gov.in/sites/default/files/coi-4March2016.pdf
+2025-05-11 10:54:39,833 - pdf_processor - WARNING - No processed PDFs to save
+2025-05-11 10:54:39,834 - pdf_processor - INFO - Processed 0 PDF files
+2025-05-11 10:54:39,834 - run_all - INFO - Step 6: Generating summary report
+2025-05-11 10:54:39,834 - indian_law_scraper - INFO - Generating summary report
+2025-05-11 10:54:39,835 - indian_law_scraper - INFO - Summary report generated
+2025-05-11 10:54:39,835 - run_all - INFO - All tasks completed successfully in 11.07 seconds
+2025-05-11 11:03:14,361 - run_all - INFO - Starting full scraping run with document limit: 10
+2025-05-11 11:03:14,361 - run_all - INFO - Step 1: Scraping from Indian Kanoon
+2025-05-11 11:03:14,361 - indian_law_scraper - INFO - Scraping Indian Constitution from Indian Kanoon
+2025-05-11 11:03:15,037 - indian_law_scraper - INFO - Scraping up to 10 bare acts from Indian Kanoon
+2025-05-11 11:03:15,851 - indian_law_scraper - WARNING - No laws to save from Indian Kanoon
+2025-05-11 11:03:15,851 - run_all - INFO - Step 2: Scraping from India Code
+2025-05-11 11:03:15,851 - indian_law_scraper - INFO - Scraping Constitution from India Code at https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 11:03:16,311 - indian_law_scraper - ERROR - Request error on attempt 1/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 11:03:16,311 - indian_law_scraper - INFO - Retrying in 1.71 seconds...
+2025-05-11 11:03:18,152 - indian_law_scraper - ERROR - Request error on attempt 2/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 11:03:18,152 - indian_law_scraper - INFO - Retrying in 2.23 seconds...
+2025-05-11 11:03:20,451 - indian_law_scraper - ERROR - Request error on attempt 3/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 11:03:20,451 - indian_law_scraper - ERROR - Failed to retrieve https://www.indiacode.nic.in/coiweb/welcome.html after 3 attempts
+2025-05-11 11:03:20,452 - indian_law_scraper - INFO - Scraping up to 10 central acts from India Code
+2025-05-11 11:03:20,541 - indian_law_scraper - ERROR - Request error on attempt 1/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 11:03:20,541 - indian_law_scraper - INFO - Retrying in 1.40 seconds...
+2025-05-11 11:03:22,075 - indian_law_scraper - ERROR - Request error on attempt 2/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 11:03:22,076 - indian_law_scraper - INFO - Retrying in 2.68 seconds...
+2025-05-11 11:03:24,830 - indian_law_scraper - ERROR - Request error on attempt 3/3: 404 Client Error: Not Found for url: https://www.indiacode.nic.in/coiweb/welcome.html
+2025-05-11 11:03:24,830 - indian_law_scraper - ERROR - Failed to retrieve https://www.indiacode.nic.in/coiweb/welcome.html after 3 attempts
+2025-05-11 11:03:24,831 - indian_law_scraper - WARNING - No laws to save from India Code
+2025-05-11 11:03:24,831 - run_all - INFO - Step 3: Scraping from Legislative Department
+2025-05-11 11:03:24,831 - indian_law_scraper - INFO - Scraping Constitution from Legislative Department
+2025-05-11 11:03:24,831 - indian_law_scraper - INFO - Constitution PDF available at https://legislative.gov.in/sites/default/files/coi-4March2016.pdf - needs PDF processing
+2025-05-11 11:03:24,831 - indian_law_scraper - INFO - Scraping up to 10 acts from Legislative Department
+2025-05-11 11:03:25,268 - indian_law_scraper - INFO - Saved 1 law references from Legislative Department
+2025-05-11 11:03:25,268 - run_all - INFO - Step 4: Generating instructions for paid sites
+2025-05-11 11:03:25,268 - indian_law_scraper - INFO - Generating instructions for paid sites
+2025-05-11 11:03:25,269 - indian_law_scraper - INFO - Generated instructions for paid sites
+2025-05-11 11:03:25,269 - run_all - INFO - Step 5: Processing PDF files
+2025-05-11 11:03:25,270 - pdf_processor - INFO - Processing PDFs using PyPDF2
+2025-05-11 11:03:25,275 - pdf_processor - INFO - Processing PDF: Constitution of India from https://legislative.gov.in/sites/default/files/coi-4March2016.pdf
+2025-05-11 11:03:25,784 - pdf_processor - ERROR - Error processing PDF Constitution of India: 404 Client Error: Not Found for url: https://legislative.gov.in/sites/default/files/coi-4March2016.pdf
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Legalaid\LegalAid\webscrape\pdf_processing_extension.py", line 77, in process_single_pdf
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\Desktop\Legalaid\LegalAid\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://legislative.gov.in/sites/default/files/coi-4March2016.pdf
+2025-05-11 11:03:25,787 - pdf_processor - WARNING - No processed PDFs to save
+2025-05-11 11:03:25,788 - pdf_processor - INFO - Processed 0 PDF files
+2025-05-11 11:03:25,788 - run_all - INFO - Step 6: Generating summary report
+2025-05-11 11:03:25,788 - indian_law_scraper - INFO - Generating summary report
+2025-05-11 11:03:25,789 - indian_law_scraper - INFO - Summary report generated
+2025-05-11 11:03:25,790 - run_all - INFO - All tasks completed successfully in 11.43 seconds
